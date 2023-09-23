@@ -1,0 +1,82 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:focus {
+  /* change color to match color of #fruit text */
+    outline: #09203f auto;
+    /* outline:  brown auto; */
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(.75turn,#09203f, 10%, #537895);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  border: 0 none
+}
+
+.search-container {
+  width: 75vmin;
+  position: relative;
+}
+
+#fruit {
+  padding: 15px 15px;
+  width: calc(100% - 30px);
+  border-radius: 2px;
+  border: none;
+  background: linear-gradient(.75turn,orange, 60%, yellow);
+  font-size: 18px;
+  font-weight: bold;
+  /* color: #537895; */
+  /* color: #09203f; */
+  color: brown;
+}
+
+#fruit::placeholder {
+  /* color: #537895; */
+  color: #09203f;
+  /* color: brown; */
+}
+
+.suggestions {
+  position: absolute;
+  top: 72px;
+  padding: 0;
+  margin: 0;
+  background: -webkit-linear-gradient(fromRight, orange, 60%, yellow);
+  background: linear-gradient(fromRight, orange, 60%, yellow); 
+  width: calc(100% - 30px);
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.has-suggestions {
+  list-style-type: none;
+  margin: 0;
+  border-radius: 0px 0px 2px 2px;
+  background: linear-gradient(0.75turn,orange, 60%, yellow);
+  /* color: #537895; */
+  /* color: #09203f; */
+  color: brown;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: rgb(255, 123, 0);
+}
+
