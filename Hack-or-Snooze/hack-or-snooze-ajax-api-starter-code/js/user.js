@@ -1,3 +1,5 @@
+//contains code for UI about logging in/signing up/logging out, as well as code about remembering a user when they refresh the page and logging them in automatically.
+
 "use strict";
 
 // global to hold the User instance of the currently-logged-in user
@@ -107,10 +109,26 @@ function saveUserCredentialsInLocalStorage() {
  * - generate the user profile part of the page
  */
 
+// updated in further study to include user profile name, username, and creation date
 function updateUIOnUserLogin() {
   console.debug("updateUIOnUserLogin");
 
+  hidePageComponents();
+
+  // update stories so stars appear
+  putStoriesOnPage();
   $allStoriesList.show();
 
   updateNavOnLogin();
+  generateUserProfile();
+  $storiesContainer.show();
+}
+
+// extra practice... part of building user profile
+function generateUserProfile() {
+  console.debug("generateUserProfile");
+
+  $("#profile-name").text(currentUser.name);
+  $("#profile-username").text(currentUser.username);
+  $("#profile-account-date").text(currentUser.createdAt.slice(0, 10));
 }
