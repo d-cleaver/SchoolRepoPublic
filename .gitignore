@@ -37,4 +37,8 @@ node_modules
 /Unit_37_Express_and_Postgres/37.1/express-pg-intro-demo/
 /Unit_37_Express_and_Postgres/37.2/express-pg-relationships-demo/
 /Unit_37_Express_and_Postgres/37.3/express-pg-oo-demo/
+/Unit_38_Intermediate_Express/38.1/express-hashing-jwts-demo/
+/Unit_38_Intermediate_Express/38.2/express-api-validation-demo/
+/Unit_38_Intermediate_Express/38.3/express-testing-practices-demo/
+
 
