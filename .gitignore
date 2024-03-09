@@ -2,6 +2,7 @@ venv
 __pycache__
 .vscode
 node_modules
+package-lock.json
 /Unit_23_Flask/23.1/flask-intro-demo/
 /Unit_23_Flask/23.2/flask-jinja-demo/
 /Unit_23_Flask/23.2/flask-madlibs-solution/
